@@ -1,10 +1,24 @@
 <template name="vsmachine">
-	<button class="rock" type="button">Piedra</button>
-	<button class="paper" type="button">Papel</button>
-	<button class="scissors" type="button">Tijeras</button>
-	<button class="lizard" type="button">Lagarto</button>
-	<button class="spock" type="button">Spock</button>
-	<span>Player: {{resultPlayer}}</span>
-	<span>Machine: {{resultMachine}}</span>
-	<span>Result: {{winner}}</span>
+	<article>
+		<div class="game-options">
+			<button class="btn-option rock" type="button"><img src="/images/rock.png"></button>
+			<button class="btn-option paper" type="button"><img src="/images/paper.png"></button>
+			<button class="btn-option scissors" type="button"><img src="/images/scissors.png"></button>
+			<button class="btn-option lizard" type="button"><img src="/images/lizard.png"></button>
+			<button class="btn-option spock" type="button"><img src="/images/spock.png"></button>
+		</div>
+		<div class="game-results">
+			<div>
+				<img class="img-option" src="{{resultPlayer}}"><br>
+				<span>Player</span>
+			</div>
+			<div class="result">
+				<img class="img-result" src="{{winner}}">
+			</div>
+			<div>
+				<img class="img-option" src="{{resultMachine}}"><br>
+				<span>Machine</span>
+			</div>
+		</div>
+	</article>
 </template>

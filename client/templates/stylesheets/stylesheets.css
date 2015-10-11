@@ -1,3 +1,70 @@
+/*.title h1 {
+	margin-left: 295px;
+}*/
+.title {
+	margin: 0 auto;
+	width: 9%;
+}
+
 body {
-	background-color: yellowgreen;
+	background-color: rgb(70, 69, 69);
+	color: white;
+}
+
+article {
+	margin: 0 auto;
+	width: 45%;
+}
+
+.btn {
+	width: 160px;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.menu-buttons {
+	margin: 0 auto;
+	width: 34%;	
+}
+
+.game-options, .game-results {
+	margin-left: 5px;
+}
+
+.game-results {
+	display: -webkit-box;
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 60%;
+}
+
+.btn-option {
+	background-size: 60%; /* Tamaño de la imagen */
+	height: 100px;  /* Alto del botón */
+	width: 100px;  /* Ancho del botón */
+	border-radius: 100%;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.img-option {
+	width: 90px;
+}
+
+.img-result {
+	width: 32px;
+}
+
+
+.game-results span {
+	margin-left: 20px;
+}
+
+.game-results div {
+	margin-left: 25px;
+}
+
+.result {
+	margin-top: 30px;
 }

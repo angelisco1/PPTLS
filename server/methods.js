@@ -5,19 +5,19 @@ var generateOption = function(){
 var getOption = function(opt){
   switch(opt){
     case 1: 
-      return "Rock";
+      return "/images/rock.png";
       break;
     case 2: 
-      return "Paper";
+      return "/images/paper.png";
       break;
     case 3: 
-      return "Scissors";
+      return "/images/scissors.png";
       break;
     case 4: 
-      return "Lizard";
+      return "/images/lizard.png";
       break;
     case 5: 
-      return "Spock";
+      return "/images/spock.png";
       break;
   }
 }
@@ -26,42 +26,42 @@ Meteor.methods({
     play: function(option1){
     	var option2 = generateOption();
       if(option1 == option2){
-      	return {p1: getOption(option1), p2: getOption(option2), res: "Draw"};
+      	return {p1: getOption(option1), p2: getOption(option2), res: "/images/draw.png"};
       }else{
       	switch(option1){
       		case 1:
       			if(option2 == 3 || option2 == 4){
-      				return {p1: getOption(option1), p2: getOption(option2), res: "Player1"};
+      				return {p1: getOption(option1), p2: getOption(option2), res: "/images/win.png"};
       			}else{
-      				return {p1: getOption(option1), p2: getOption(option2), res: "Machine"};
+      				return {p1: getOption(option1), p2: getOption(option2), res: "/images/lose.png"};
       			}
       			break;
       		case 2:
       			if(option2 == 1 || option2 == 5){
-              return {p1: getOption(option1), p2: getOption(option2), res: "Player1"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/win.png"};
       			}else{
-              return {p1: getOption(option1), p2: getOption(option2), res: "Machine"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/lose.png"};
       			}
       			break;
       		case 3:
       			if(option2 == 2 || option2 == 4){
-              return {p1: getOption(option1), p2: getOption(option2), res: "Player1"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/win.png"};
       			}else{
-              return {p1: getOption(option1), p2: getOption(option2), res: "Machine"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/lose.png"};
       			}
       			break;
       		case 4:
       			if(option2 == 2 || option2 == 5){
-              return {p1: getOption(option1), p2: getOption(option2), res: "Player1"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/win.png"};
       			}else{
-              return {p1: getOption(option1), p2: getOption(option2), res: "Machine"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/lose.png"};
       			}
       			break;
       		case 5:
       			if(option2 == 1 || option2 == 3){
-              return {p1: getOption(option1), p2: getOption(option2), res: "Player1"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/win.png"};
       			}else{
-              return {p1: getOption(option1), p2: getOption(option2), res: "Machine"};
+              return {p1: getOption(option1), p2: getOption(option2), res: "/images/lose.png"};
       			}
       			break;
 
