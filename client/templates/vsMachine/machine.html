@@ -1,11 +1,11 @@
 <template name="vsmachine">
 	<article>
 		<div class="game-options">
-			<button class="btn-option rock" type="button"><img src="/images/rock.png"></button>
-			<button class="btn-option paper" type="button"><img src="/images/paper.png"></button>
-			<button class="btn-option scissors" type="button"><img src="/images/scissors.png"></button>
-			<button class="btn-option lizard" type="button"><img src="/images/lizard.png"></button>
-			<button class="btn-option spock" type="button"><img src="/images/spock.png"></button>
+			<button class="btn-option scissors" id="0" type="button"><img src="/images/scissors.png"></button>
+			<button class="btn-option paper" id="1" type="button"><img src="/images/paper.png"></button>
+			<button class="btn-option rock" id="2" type="button"><img src="/images/rock.png"></button>
+			<button class="btn-option lizard" id="3" type="button"><img src="/images/lizard.png"></button>
+			<button class="btn-option spock" id="4" type="button"><img src="/images/spock.png"></button>
 		</div>
 		<div class="game-results">
 			<div>
@@ -18,6 +18,17 @@
 			<div>
 				<img class="img-option" src="{{resultMachine}}"><br>
 				<span>Machine</span>
+			</div>
+		</div>
+		<div class="game-results">
+			<div class="green">
+				{{getDataVsMachineGanadas}}
+			</div>
+			<div class="result blue">
+				{{getDataVsMachineEmpatadas}}
+			</div>
+			<div class="red">
+				{{getDataVsMachinePerdidas}}
 			</div>
 		</div>
 	</article>

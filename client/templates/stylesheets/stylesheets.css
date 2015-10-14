@@ -1,6 +1,3 @@
-/*.title h1 {
-	margin-left: 295px;
-}*/
 .title {
 	margin: 0 auto;
 	width: 9%;
@@ -67,4 +64,16 @@ article {
 
 .result {
 	margin-top: 30px;
+}
+
+.green {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
 }
